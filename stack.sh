@@ -8,4 +8,6 @@ if [$? -eq 0]; then
 echo "command executed"
 else
 echo "command failed"
+echo "check the log file :: $LOG for more information"
+exit 1
 fi
