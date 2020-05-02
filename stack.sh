@@ -4,7 +4,7 @@ LOG=/tmp/stack.log
 rm -f $LOG
 
 ## check if script is executed by the root user ot not
-$USER_ID=$(id -u)
+USER_ID=$(id -u)
 if[$USER_ID -eq 0]; then
 echo "you loged in as root user"
 else
