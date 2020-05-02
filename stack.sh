@@ -12,13 +12,14 @@ echo "login as root user or use sudo command to execute commands"
 exit 1
 fi
 
+
 echo -e "\e[34mwebserver setup>>\e[0m"
-echo -e "Install webserver"
+echo -n -e "Install webserver : "
 yum install httpd -y &>>$LOG
 if [ $? -eq 0 ]; then
-echo "success"
+echo "\e[32msuccess\e[0m"
 else
-echo "failed"
+echo "\e[31mfailed\e[0m"
 echo "check the log file :: $LOG for more information"
 exit 1
 fi
