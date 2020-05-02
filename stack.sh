@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "hi"
 LOG=/tmp/stack.log
 rm -f $LOG
 ## check if script is executed by the root user ot not
