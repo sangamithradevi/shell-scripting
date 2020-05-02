@@ -17,9 +17,9 @@ echo -e "\e[34mwebserver setup>>\e[0m"
 echo -n -e "Install webserver : "
 yum install httpd -y &>>$LOG
 if [ $? -eq 0 ]; then
-echo "\e[32msuccess\e[0m"
+echo -e "\e[36msuccess\e[0m"
 else
-echo "\e[31mfailed\e[0m"
+echo -e "\e[31mfailed\e[0m"
 echo "check the log file :: $LOG for more information"
 exit 1
 fi
