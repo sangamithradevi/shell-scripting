@@ -12,7 +12,7 @@ echo "login as root user or use sudo command to execute commands"
 exit 1
 fi
 
-echo -e "webserver setup>>"
+echo -e "\e[34mwebserver setup>>"
 echo -e "Install webserver"
 yum install httpd -y &>>$LOG
 if [ $? -eq 0 ]; then
